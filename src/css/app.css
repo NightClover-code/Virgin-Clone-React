@@ -427,7 +427,12 @@ header .menu::after {
 }
 
 .showcase {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
   min-height: 82vh;
   background-color: #e10a0a;
@@ -490,11 +495,9 @@ header .menu::after {
 .showcase .text-content {
   text-align: center;
   display: block;
-  max-width: 550px;
+  max-width: 700px;
   height: 480px;
-  position: absolute;
-  left: 1.5%;
-  top: 40px;
+  margin-top: 8%;
 }
 
 .showcase .text-content .mini-text {
@@ -526,9 +529,7 @@ header .menu::after {
   display: block;
   width: 550px;
   height: 480px;
-  position: absolute;
-  right: 1.5%;
-  top: 40px;
+  margin-top: 4%;
 }
 
 .showcase .showcase-img img {
