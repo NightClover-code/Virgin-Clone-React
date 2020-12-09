@@ -1,0 +1,62 @@
+@import './variables';
+.additional-info {
+	position: relative;
+	background-color: $pink;
+	width: 100%;
+	display: block;
+	height: 130vh;
+	.info-grid {
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(2, 550px);
+		grid-template-rows: repeat(2, 500px);
+		grid-gap: 25px;
+		padding-top: 125px;
+		.item {
+			background-color: #fff;
+			position: relative;
+			display: grid;
+			grid-template-rows: 60% 40%;
+			.img-container {
+				position: relative;
+				img {
+					width: 100%;
+				}
+				.svg-triangle {
+					fill: #fff;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+				}
+			}
+
+			.text {
+				background-color: #fff;
+				z-index: 2;
+				.text-content {
+					width: 90%;
+					margin: 25px auto 0 auto;
+					h3 {
+						font-size: 30px;
+					}
+					p {
+						margin-top: 30px;
+					}
+					span {
+						margin-top: 20px;
+						color: $red;
+						display: inline-block;
+						position: relative;
+						cursor: pointer;
+						svg {
+							position: absolute;
+							right: -20px;
+							top: 0;
+							fill: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}

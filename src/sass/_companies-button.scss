@@ -1,0 +1,48 @@
+@import './variables';
+.companies-button-container {
+	height: 80px;
+	display: block;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 50px 0;
+	border-radius: 7px;
+	font-size: 15px;
+	padding: 3px 5px;
+	border: none;
+	font-weight: bold;
+	height: 45px;
+}
+.companies-btn {
+	width: 230px;
+	color: white;
+	background-color: $red;
+	&:hover > .button-overlay {
+		content: '';
+		width: 230px;
+		height: 45px;
+		border-radius: 7px;
+		background-color: rgba(0, 0, 0, 0.15);
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+.scoop-btn {
+	width: 200px;
+	color: $red;
+	background-color: #fff;
+	border: 1px solid rgb(214, 210, 210);
+	&:hover {
+		border-color: $red;
+	}
+}

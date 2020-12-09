@@ -1,0 +1,31 @@
+@import './variables';
+.social-icons {
+	width: 400px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 15% 15% 20% 15% 15%;
+	.icon {
+		display: inline-block;
+		text-align: center;
+		cursor: pointer;
+		transition-duration: 200ms;
+		transition-timing-function: ease-in-out;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	.instagram {
+		text-align: center;
+		transform: scale(0.45);
+		display: inline-block;
+		transition-duration: 200ms;
+		transition-timing-function: ease-in-out;
+
+		cursor: pointer;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}

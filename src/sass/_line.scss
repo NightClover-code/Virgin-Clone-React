@@ -1,0 +1,10 @@
+@import './variables';
+.line {
+	width: 100px;
+	height: 2px;
+	background-color: $red;
+	transform: rotate(90deg);
+	position: absolute;
+	left: 47.5%;
+	top: 35px;
+}
