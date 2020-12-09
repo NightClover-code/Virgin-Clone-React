@@ -67,7 +67,7 @@
 			.companies-grid {
 				margin: auto;
 				display: grid;
-				grid-template-columns: repeat(9, 430px);
+				grid-template-columns: repeat(9, minmax(300px, 430px));
 				grid-template-rows: 420px;
 				grid-gap: 25px;
 				.square {

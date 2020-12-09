@@ -1,5 +1,6 @@
 import React from 'react';
 import RedRectangle from './RedRectangle';
+import SliderContainer from './SliderContainer';
 
 const VirginCompanies = () => {
 	return (
@@ -10,6 +11,7 @@ const VirginCompanies = () => {
 				<h1 className="title">
 					See what we're made of<span className="red-dot">.</span>
 				</h1>
+				<SliderContainer />
 			</div>
 		</section>
 	);

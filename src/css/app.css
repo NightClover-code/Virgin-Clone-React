@@ -257,7 +257,7 @@ header .menu {
   display: block;
   width: 120px;
   height: 65px;
-  background-color: rgba(235, 231, 231, 0.322);
+  background-color: rgba(236, 236, 236, 0.322);
   z-index: 2;
 }
 
@@ -296,7 +296,7 @@ header .menu::after {
   height: 65px;
   -webkit-transform: skew(-24deg) translateX(15px);
           transform: skew(-24deg) translateX(15px);
-  background-color: rgba(235, 231, 231, 0.322);
+  background-color: rgba(236, 236, 236, 0.322);
 }
 
 .line {
@@ -711,8 +711,8 @@ header .menu::after {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (430px)[9];
-      grid-template-columns: repeat(9, 430px);
+  -ms-grid-columns: (minmax(300px, 430px))[9];
+      grid-template-columns: repeat(9, minmax(300px, 430px));
   -ms-grid-rows: 420px;
       grid-template-rows: 420px;
   grid-gap: 25px;
