@@ -142,7 +142,7 @@
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   position: absolute;
-  left: 47.5%;
+  left: 47%;
   top: 35px;
 }
 
@@ -306,7 +306,7 @@ header .menu::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   position: absolute;
-  left: 47.5%;
+  left: 47%;
   top: 35px;
 }
 
@@ -434,7 +434,7 @@ header .menu::after {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  min-height: 82vh;
+  min-height: 55vh;
   background-color: #e10a0a;
   position: relative;
 }
@@ -496,7 +496,7 @@ header .menu::after {
   text-align: center;
   display: block;
   max-width: 700px;
-  height: 480px;
+  min-height: 450px;
   margin-top: 8%;
 }
 
@@ -528,7 +528,7 @@ header .menu::after {
 .showcase .showcase-img {
   display: block;
   width: 550px;
-  height: 480px;
+  min-height: 450px;
   margin-top: 4%;
 }
 

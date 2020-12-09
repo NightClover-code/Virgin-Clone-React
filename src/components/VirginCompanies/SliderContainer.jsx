@@ -1,12 +1,13 @@
+import LeftArrow from './LeftArrow';
 import React from 'react';
+import RightArrow from './RightArrow';
 
 const SliderContainer = () => {
 	return (
 		<div className="slider-container">
 			<div className="grid-container">
-				{/* //TODO add left Arrow */}
-				{/* //TODO add Right Arrow */}
-
+				<LeftArrow />
+				<RightArrow />
 				<div className="companies-grid">{/* //TODO add squares */}</div>
 			</div>
 		</div>

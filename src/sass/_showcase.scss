@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	min-height: 82vh;
+	min-height: 55vh;
 	background-color: $red;
 	position: relative;
 	ul {
@@ -53,7 +53,7 @@
 		text-align: center;
 		display: block;
 		max-width: 700px;
-		height: 480px;
+		min-height: 450px;
 		margin-top: 8%;
 		.mini-text {
 			letter-spacing: 2px;
@@ -81,7 +81,7 @@
 	.showcase-img {
 		display: block;
 		width: 550px;
-		height: 480px;
+		min-height: 450px;
 		margin-top: 4%;
 		img {
 			width: 480px;

@@ -1,15 +1,15 @@
 import React from 'react';
+import RedRectangle from './RedRectangle';
 
 const VirginCompanies = () => {
 	return (
 		<section className="virgin-companies">
-			{/* //TODO add red rectangle */}
+			<RedRectangle />
 			<div className="line"></div>
 			<div className="wrapper">
 				<h1 className="title">
 					See what we're made of<span className="red-dot">.</span>
 				</h1>
-				{/* //TODO add slider container */}
 			</div>
 		</section>
 	);

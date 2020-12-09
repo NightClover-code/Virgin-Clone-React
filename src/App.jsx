@@ -5,6 +5,7 @@ import './css/app.css';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import Showcase from './components/Showcase';
+import VirginCompanies from './components/VirginCompanies/VirginCompanies';
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<Header />
 			<NavBar />
 			<Showcase />
+			<VirginCompanies />
 		</div>
 	);
 };
