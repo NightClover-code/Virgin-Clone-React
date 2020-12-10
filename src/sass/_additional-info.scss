@@ -7,11 +7,13 @@
 	height: 200vh;
 	.info-grid {
 		display: grid;
+		width: 90%;
 		justify-content: center;
-		grid-template-columns: repeat(2, 550px);
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 500px);
 		grid-gap: 25px;
 		padding-top: 125px;
+		margin: auto;
 		.item {
 			background-color: #fff;
 			position: relative;

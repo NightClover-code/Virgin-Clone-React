@@ -5,7 +5,7 @@ import AdditionalInfo from './components/AdditionalInfo';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import Scoop from './components/Scoop';
+import Scoop from './components/Scoop/Scoop';
 import Showcase from './components/Showcase';
 import SocialMedia from './components/SocialMedia';
 //TODO refactor scoop

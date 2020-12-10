@@ -1,10 +1,10 @@
 import React from 'react';
 
-const CompaniesButton = () => {
+const CompaniesButton = ({ buttonClass, buttonTitle }) => {
 	return (
 		<div className="companies-button-container">
-			<button className="btn companies-btn">
-				See all Virgin Companies
+			<button className={`btn ${buttonClass}`}>
+				{buttonTitle}
 				<div className="button-overlay"></div>
 			</button>
 		</div>

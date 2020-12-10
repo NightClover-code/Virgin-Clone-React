@@ -9,15 +9,17 @@
 .additional-info .info-grid {
   display: -ms-grid;
   display: grid;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (550px)[2];
-      grid-template-columns: repeat(2, 550px);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (500px)[2];
       grid-template-rows: repeat(2, 500px);
   grid-gap: 25px;
   padding-top: 125px;
+  margin: auto;
 }
 
 .additional-info .info-grid .item {
