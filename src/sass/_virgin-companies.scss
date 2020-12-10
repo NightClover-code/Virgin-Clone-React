@@ -1,7 +1,7 @@
 @import './variables';
 .virgin-companies {
 	display: block;
-	height: 93vh;
+	min-height: 130vh;
 	width: 100%;
 	background-color: $pink;
 	position: relative;
@@ -67,10 +67,11 @@
 			.companies-grid {
 				margin: auto;
 				display: grid;
-				grid-template-columns: repeat(9, minmax(300px, 430px));
+				grid-template-columns: repeat(9, minmax(380px, 700px));
 				grid-template-rows: 420px;
 				grid-gap: 25px;
 				.square {
+					cursor: pointer;
 					display: block;
 					background-color: #fff;
 					.img-container {
@@ -83,18 +84,18 @@
 					}
 					.text-content {
 						position: relative;
-						display: grid;
+						display: flex;
 						justify-content: center;
+						align-items: center;
 						span {
 							font-size: 30px;
 							text-align: center;
 							svg {
+								align-self: flex-end;
+								margin-left: 10px;
 								fill: $red;
-								position: absolute;
-								right: 95px;
-								top: 10px;
 								width: 25px;
-								height: 25px;
+								height: 22px;
 							}
 						}
 					}

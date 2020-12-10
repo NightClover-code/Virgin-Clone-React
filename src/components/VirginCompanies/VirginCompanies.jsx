@@ -1,3 +1,4 @@
+import CompaniesButton from './CompaniesButton';
 import React from 'react';
 import RedRectangle from './RedRectangle';
 import SliderContainer from './SliderContainer';
@@ -12,6 +13,7 @@ const VirginCompanies = () => {
 					See what we're made of<span className="red-dot">.</span>
 				</h1>
 				<SliderContainer />
+				<CompaniesButton />
 			</div>
 		</section>
 	);

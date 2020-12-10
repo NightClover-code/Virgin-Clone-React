@@ -4,6 +4,7 @@ import './css/app.css';
 //importing components
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Scoop from './components/Scoop';
 import Showcase from './components/Showcase';
 import VirginCompanies from './components/VirginCompanies/VirginCompanies';
 
@@ -14,6 +15,7 @@ const App = () => {
 			<NavBar />
 			<Showcase />
 			<VirginCompanies />
+			<Scoop />
 		</div>
 	);
 };

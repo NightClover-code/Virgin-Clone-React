@@ -91,6 +91,7 @@
 }
 
 .btn {
+  z-index: 10;
   position: relative;
   display: inline-block;
   outline: none;
@@ -142,8 +143,8 @@
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   position: absolute;
-  left: 47%;
-  top: 35px;
+  left: 46%;
+  top: 50px;
 }
 
 footer {
@@ -306,8 +307,8 @@ header .menu::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   position: absolute;
-  left: 47%;
-  top: 35px;
+  left: 46%;
+  top: 50px;
 }
 
 .nav-bar {
@@ -627,7 +628,7 @@ header .menu::after {
 
 .virgin-companies {
   display: block;
-  height: 93vh;
+  min-height: 130vh;
   width: 100%;
   background-color: #fff2f2;
   position: relative;
@@ -711,14 +712,15 @@ header .menu::after {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 430px))[9];
-      grid-template-columns: repeat(9, minmax(300px, 430px));
+  -ms-grid-columns: (minmax(380px, 700px))[9];
+      grid-template-columns: repeat(9, minmax(380px, 700px));
   -ms-grid-rows: 420px;
       grid-template-rows: 420px;
   grid-gap: 25px;
 }
 
 .virgin-companies .slider-container .grid-container .companies-grid .square {
+  cursor: pointer;
   display: block;
   background-color: #fff;
 }
@@ -735,11 +737,15 @@ header .menu::after {
 
 .virgin-companies .slider-container .grid-container .companies-grid .square .text-content {
   position: relative;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .virgin-companies .slider-container .grid-container .companies-grid .square .text-content span {
@@ -748,12 +754,12 @@ header .menu::after {
 }
 
 .virgin-companies .slider-container .grid-container .companies-grid .square .text-content span svg {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: 10px;
   fill: #e10a0a;
-  position: absolute;
-  right: 95px;
-  top: 10px;
   width: 25px;
-  height: 25px;
+  height: 22px;
 }
 
 .virgin-companies .slider-container .grid-container .companies-grid .active {
@@ -835,6 +841,6 @@ body {
 
 .wrapper {
   margin: auto;
-  width: 70%;
+  width: 90%;
 }
 /*# sourceMappingURL=app.css.map */
