@@ -1,91 +1,78 @@
 @import './variables';
 .showcase {
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	min-height: 55vh;
-	background-color: $red;
-	position: relative;
-	ul {
-		display: block;
-		width: 356px;
-		background-color: $pink;
-		z-index: 10;
-		li {
-			list-style: none;
-			text-align: center;
-			z-index: 10;
-			a {
-				text-decoration: none;
-				text-transform: uppercase;
-				color: #000;
-				font-weight: 500;
-				letter-spacing: 2px;
-				cursor: pointer;
-				transition: transform 0.4s ease-in-out;
-				line-height: 4.5;
-				display: block;
-				&:hover {
-					color: $red;
-				}
-			}
-		}
-	}
-	#about {
-		position: absolute;
-		top: 0;
-		left: 595px;
-		display: none;
-	}
-	#foundation {
-		position: absolute;
-		top: 0;
-		right: 593px;
-		display: none;
-	}
-	#branson {
-		position: absolute;
-		top: 0;
-		right: 236px;
-		display: none;
-	}
-	.text-content {
-		text-align: center;
-		display: block;
-		max-width: 700px;
-		min-height: 450px;
-		margin-top: 8%;
-		.mini-text {
-			letter-spacing: 2px;
-			line-height: 6.2;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: white;
-		}
-		.more {
-			a {
-				text-decoration: none;
-				color: white;
-				svg {
-					fill: #fff;
-					transform: translateY(7px);
-				}
-			}
-		}
-		h2 {
-			font-family: 'utopia-std', serif;
-			font-size: 55px;
-			color: white;
-		}
-	}
-	.showcase-img {
-		display: block;
-		width: 550px;
-		min-height: 450px;
-		margin-top: 4%;
-		img {
-			width: 480px;
-			height: 480px;
-		}
-	}
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 55vh;
+  background-color: $red;
+  position: relative;
+  ul {
+    display: block;
+    width: 356px;
+    background-color: $pink;
+    z-index: 10;
+    li {
+      list-style: none;
+      text-align: center;
+      z-index: 10;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 500;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: transform 0.4s ease-in-out;
+        line-height: 4.5;
+        display: block;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+  #branson,
+  #foundation {
+    display: none;
+    position: absolute;
+  }
+  .text-content {
+    text-align: center;
+    display: block;
+    max-width: 700px;
+    min-height: 450px;
+    margin-top: 8%;
+    .mini-text {
+      letter-spacing: 2px;
+      line-height: 6.2;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+    .more {
+      a {
+        text-decoration: none;
+        color: white;
+        svg {
+          fill: #fff;
+          transform: translateY(7px);
+        }
+      }
+    }
+    h2 {
+      font-family: 'utopia-std', serif;
+      font-size: 55px;
+      color: white;
+    }
+  }
+  .showcase-img {
+    display: block;
+    width: 550px;
+    min-height: 450px;
+    margin-top: 4%;
+    img {
+      width: 480px;
+      height: 480px;
+    }
+  }
 }

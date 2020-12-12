@@ -30,12 +30,12 @@
 			}
 		}
 	}
-	.about,
-	.foundation,
-	.branson {
-		border-bottom: 4.5px solid rgba(225, 10, 10, 0);
-		&:hover {
-			border-color: rgba(225, 10, 10, 1);
-		}
+}
+.about,
+.foundation,
+.branson {
+	border-bottom: 4.5px solid rgba(225, 10, 10, 0);
+	&:hover {
+		border-color: rgba(225, 10, 10, 1);
 	}
 }

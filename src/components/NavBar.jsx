@@ -14,6 +14,7 @@ const NavBar = () => {
 						About us<i className="fas fa-chevron-down"></i>
 					</a>
 				</li>
+
 				<li data-id="foundation">
 					<a href="#">
 						Our foundation<i className="fas fa-chevron-down"></i>

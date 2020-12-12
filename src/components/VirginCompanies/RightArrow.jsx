@@ -1,8 +1,13 @@
 import React from 'react';
 
-const RightArrow = () => {
+const RightArrow = ({ rightBtn, onRightArrowClick }) => {
 	return (
-		<div className="right-arrow arrow" id="right-arrow">
+		<div
+			className="right-arrow arrow"
+			id="right-arrow"
+			ref={rightBtn}
+			onClick={onRightArrowClick}
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				enable-background="new 0 0 24 24"
