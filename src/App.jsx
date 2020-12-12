@@ -11,20 +11,29 @@ import SocialMedia from './components/SocialMedia';
 //TODO refactor scoop
 //importing components
 import VirginCompanies from './components/VirginCompanies/VirginCompanies';
+import { useState } from 'react';
 
 const App = () => {
-	return (
-		<div className="app-container">
-			<Header />
-			<NavBar />
-			<Showcase />
-			<VirginCompanies />
-			<Scoop />
-			<SocialMedia />
-			<AdditionalInfo />
-			<Footer />
-		</div>
-	);
+  const [counter, setCounter] = useState(0);
+  const [list, setList] = useState(null);
+  const getListRef = listRef => {
+    setList(listRef);
+  };
+  return (
+    <div className="app-container">
+      <Header />
+      <NavBar listRef={list} />
+      <Showcase getListRef={getListRef} />
+      <VirginCompanies
+        counter={counter}
+        setCounter={setCounter}
+      />
+      <Scoop />
+      <SocialMedia />
+      <AdditionalInfo />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;

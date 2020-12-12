@@ -8,7 +8,7 @@
   position: relative;
   ul {
     display: block;
-    width: 356px;
+    width: 25%;
     background-color: $pink;
     z-index: 10;
     li {
@@ -31,10 +31,20 @@
       }
     }
   }
+  #about,
   #branson,
   #foundation {
-    display: none;
     position: absolute;
+    display: none;
+  }
+  #about {
+    left: 25%;
+  }
+  #branson {
+    left: 50%;
+  }
+  #foundation {
+    left: 75%;
   }
   .text-content {
     text-align: center;

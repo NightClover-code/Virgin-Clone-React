@@ -3,10 +3,10 @@
 import HoverLists from './HoverLists';
 import React from 'react';
 
-const Showcase = () => {
+const Showcase = ({ getListRef }) => {
   return (
     <section className="showcase">
-      <HoverLists />
+      <HoverLists getListRef={getListRef} />
       <div className="text-content">
         <span className="date mini-text">
           9 NOVEMBER 2020

@@ -99,7 +99,7 @@
   outline: none;
   border: none;
   cursor: pointer;
-  margin: 50px 0;
+  margin: 30px 0;
   border-radius: 7px;
   font-size: 15px;
   padding: 3px 5px;
@@ -322,12 +322,12 @@ header .menu::after {
 .nav-bar li {
   width: 25%;
   padding-bottom: 15px;
-  float: left;
   text-align: center;
+  float: left;
   list-style: none;
   cursor: pointer;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 
 .nav-bar li i {
@@ -350,14 +350,14 @@ header .menu::after {
   font-weight: 500;
 }
 
-.nav-bar li a:hover {
+.nav-bar li:hover a {
   color: #e10a0a;
 }
 
 .about,
 .foundation,
 .branson {
-  border-bottom: 4.5px solid rgba(225, 10, 10, 0);
+  border-bottom: 4.4px solid rgba(225, 10, 10, 0);
 }
 
 .about:hover,
@@ -444,7 +444,7 @@ header .menu::after {
 
 .showcase ul {
   display: block;
-  width: 356px;
+  width: 25%;
   background-color: #fff2f2;
   z-index: 10;
 }
@@ -474,10 +474,23 @@ header .menu::after {
   color: #e10a0a;
 }
 
+.showcase #about,
 .showcase #branson,
 .showcase #foundation {
-  display: none;
   position: absolute;
+  display: none;
+}
+
+.showcase #about {
+  left: 25%;
+}
+
+.showcase #branson {
+  left: 50%;
+}
+
+.showcase #foundation {
+  left: 75%;
 }
 
 .showcase .text-content {

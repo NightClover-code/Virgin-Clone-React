@@ -1,18 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
-const HoverLists = () => {
-  const screenWidth = window.innerWidth;
-  console.log(screenWidth);
-  //refs
-  const aboutListRef = useRef(null);
-  aboutListRef.current.style.left = `${
-    screenWidth - aboutListRef.current.clientWidth * 3
-  }`;
+const HoverLists = ({ getListRef }) => {
+  const listRef = useRef(null);
+  useEffect(() => {
+    getListRef(listRef.current);
+  }, [getListRef]);
   return (
     <div className="on-hover-lists">
-      <ul id="about" ref={aboutListRef}>
+      <ul id="about" ref={listRef}>
         <li>
           <a href="#">Our Story</a>
         </li>
