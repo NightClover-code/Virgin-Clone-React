@@ -354,18 +354,6 @@ header .menu::after {
   color: #e10a0a;
 }
 
-.about,
-.foundation,
-.branson {
-  border-bottom: 4.4px solid rgba(225, 10, 10, 0);
-}
-
-.about:hover,
-.foundation:hover,
-.branson:hover {
-  border-color: #e10a0a;
-}
-
 .red-rectangle {
   position: absolute;
   top: 0;
@@ -477,19 +465,25 @@ header .menu::after {
 .showcase #about,
 .showcase #branson,
 .showcase #foundation {
-  position: absolute;
   display: none;
+  position: absolute;
+  border-top: 4.4px solid;
+  border-color: #e10a0a;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .showcase #about {
   left: 25%;
 }
 
-.showcase #branson {
+.showcase #foundation {
   left: 50%;
 }
 
-.showcase #foundation {
+.showcase #branson {
   left: 75%;
 }
 
@@ -842,5 +836,9 @@ body {
 .wrapper {
   margin: auto;
   width: 90%;
+}
+
+.active {
+  display: block !important;
 }
 /*# sourceMappingURL=app.css.map */

@@ -15,15 +15,32 @@ import { useState } from 'react';
 
 const App = () => {
   const [counter, setCounter] = useState(0);
-  const [list, setList] = useState(null);
-  const getListRef = listRef => {
-    setList(listRef);
+  //
+  const dropDowns = [];
+  //getting the dropDown ref
+  const getRef = listsRef => {
+    setTimeout(() => {
+      dropDowns.push(listsRef.current);
+    }, 20);
+  };
+  //hover dropdown functions
+  const onItemHover = target => {
+    dropDowns.forEach(dropDown => {
+      if (
+        dropDown.getAttribute('id') ===
+        target.getAttribute('data-id')
+      ) {
+        dropDown.classList.add('active');
+      } else {
+        dropDown.classList.remove('active');
+      }
+    });
   };
   return (
     <div className="app-container">
       <Header />
-      <NavBar listRef={list} />
-      <Showcase getListRef={getListRef} />
+      <NavBar onItemHover={onItemHover} />
+      <Showcase getRef={ref => getRef(ref)} />
       <VirginCompanies
         counter={counter}
         setCounter={setCounter}

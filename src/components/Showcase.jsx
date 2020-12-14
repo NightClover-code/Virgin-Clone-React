@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import HoverLists from './HoverLists';
+import DropDown from './DropDown/DropDown';
 import React from 'react';
 
-const Showcase = ({ getListRef }) => {
+const Showcase = ({ getRef }) => {
   return (
     <section className="showcase">
-      <HoverLists getListRef={getListRef} />
+      <DropDown getRef={ref => getRef(ref)} />
       <div className="text-content">
         <span className="date mini-text">
           9 NOVEMBER 2020
