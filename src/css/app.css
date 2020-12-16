@@ -313,45 +313,98 @@ header .menu::after {
   top: 50px;
 }
 
-.nav-bar {
+.nav-bar .nav-bar-list {
   margin-top: 20px;
   height: 40px;
   width: 100%;
 }
 
-.nav-bar li {
+.nav-bar .nav-bar-list .nav-item {
   width: 25%;
   padding-bottom: 15px;
   text-align: center;
   float: left;
   list-style: none;
   cursor: pointer;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.nav-bar li i {
+.nav-bar .nav-bar-list .nav-item ul {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+  width: 100%;
+  background-color: #fff2f2;
+  z-index: 10;
+  border-top: 4.4px solid;
+  border-color: #e10a0a;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+
+.nav-bar .nav-bar-list .nav-item ul li {
+  list-style: none;
+  text-align: center;
+  z-index: 10;
+}
+
+.nav-bar .nav-bar-list .nav-item ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  line-height: 4.5;
+  display: block;
+}
+
+.nav-bar .nav-bar-list .nav-item ul li a:hover {
+  color: #e10a0a;
+}
+
+.nav-bar .nav-bar-list .nav-item i {
   float: right;
   margin-top: 5px;
   margin-right: 20px;
 }
 
-.nav-bar li a {
+.nav-bar .nav-bar-list .nav-item .nav-item-anchor {
   display: block;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 2px;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-left: 20px;
 }
 
-.nav-bar li:hover a {
+.nav-bar .nav-bar-list .nav-item .nav-item-anchor:hover {
   color: #e10a0a;
+}
+
+.nav-bar .nav-bar-list .nav-item:hover .nav-item-anchor {
+  color: #e10a0a;
+}
+
+.nav-bar .nav-bar-list .nav-item:hover ul {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .red-rectangle {
@@ -428,63 +481,6 @@ header .menu::after {
   min-height: 55vh;
   background-color: #e10a0a;
   position: relative;
-}
-
-.showcase ul {
-  display: block;
-  width: 25%;
-  background-color: #fff2f2;
-  z-index: 10;
-}
-
-.showcase ul li {
-  list-style: none;
-  text-align: center;
-  z-index: 10;
-}
-
-.showcase ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  font-weight: 500;
-  letter-spacing: 2px;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  line-height: 4.5;
-  display: block;
-}
-
-.showcase ul li a:hover {
-  color: #e10a0a;
-}
-
-.showcase #about,
-.showcase #branson,
-.showcase #foundation {
-  display: none;
-  position: absolute;
-  border-top: 4.4px solid;
-  border-color: #e10a0a;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-}
-
-.showcase #about {
-  left: 25%;
-}
-
-.showcase #foundation {
-  left: 50%;
-}
-
-.showcase #branson {
-  left: 75%;
 }
 
 .showcase .text-content {
@@ -804,6 +800,52 @@ header .menu::after {
   border: 1px solid #e10a0a;
   border-radius: 50%;
   padding: 3px;
+}
+
+.nav-bar ul .list-items-container .list-items ul {
+  display: block;
+  width: 25%;
+  background-color: #fff2f2;
+  z-index: 10;
+}
+
+.nav-bar ul .list-items-container .list-items ul li {
+  list-style: none;
+  text-align: center;
+  z-index: 10;
+}
+
+.nav-bar ul .list-items-container .list-items ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  line-height: 4.5;
+  display: block;
+}
+
+.nav-bar ul .list-items-container .list-items ul li a:hover {
+  color: #e10a0a;
+}
+
+.nav-bar ul .list-items-container .list-items #about,
+.nav-bar ul .list-items-container .list-items #branson,
+.nav-bar ul .list-items-container .list-items #foundation {
+  display: none;
+  position: absolute;
+  border-top: 4.4px solid;
+  border-color: #e10a0a;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  bottom: 0;
 }
 
 * {

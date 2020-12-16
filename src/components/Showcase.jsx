@@ -1,12 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
-import DropDown from './DropDown/DropDown';
 import React from 'react';
 
-const Showcase = ({ getRef }) => {
+const Showcase = () => {
   return (
     <section className="showcase">
-      <DropDown getRef={ref => getRef(ref)} />
       <div className="text-content">
         <span className="date mini-text">
           9 NOVEMBER 2020

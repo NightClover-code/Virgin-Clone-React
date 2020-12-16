@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const DropDownItem = ({ listItems, id, itemRef }) => {
+const DropDownItem = ({ listItems, id }) => {
   const returnedListItems = listItems.map(listItem => {
     return (
       <li key={listItem.toLowerCase()}>
@@ -10,18 +10,7 @@ const DropDownItem = ({ listItems, id, itemRef }) => {
       </li>
     );
   });
-  const onDropDownLeave = () => {
-    itemRef.current.classList.remove('active');
-  };
-  return (
-    <ul
-      id={id}
-      ref={itemRef}
-      onMouseLeave={onDropDownLeave}
-    >
-      {returnedListItems}
-    </ul>
-  );
+  return <ul id={id}>{returnedListItems}</ul>;
 };
 
 export default DropDownItem;

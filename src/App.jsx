@@ -4,7 +4,7 @@ import './css/app.css';
 import AdditionalInfo from './components/AdditionalInfo';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import Scoop from './components/Scoop/Scoop';
 import Showcase from './components/Showcase';
 import SocialMedia from './components/SocialMedia';
@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="app-container">
       <Header />
-      <NavBar onItemHover={onItemHover} />
+      <NavBar />
       <Showcase getRef={ref => getRef(ref)} />
       <VirginCompanies
         counter={counter}
