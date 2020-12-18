@@ -1,56 +1,83 @@
 @import './variables';
 header {
-	height: 65px;
-	width: 100%;
-	border-bottom: 1px solid $dark-gray;
-	position: relative;
-	.logo {
-		position: absolute;
-		width: 100%;
-		left: 50%;
-		top: 0;
-		transform: translate(-30px, -3px);
-	}
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid $dark-gray;
+  position: relative;
+  .logo {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-30px, -3px);
+  }
 
-	.menu {
-		cursor: pointer;
-		display: block;
-		width: 120px;
-		height: 65px;
-		background-color: $gray;
-		z-index: 2;
-		.menu-logo {
-			z-index: 2;
-			position: absolute;
-			left: 25px;
-			top: 25px;
-			display: inline-block;
-			.bar {
-				display: block;
-				width: 24px;
-				height: 3px;
-				background-color: $red;
-				margin-bottom: 3px;
-			}
-		}
-		span {
-			z-index: 2;
-			position: absolute;
-			left: 70px;
-			top: 24px;
-			font-size: 15px;
-			text-transform: uppercase;
-			color: $red;
-			letter-spacing: 2px;
-			font-weight: 700;
-		}
-		&::after {
-			content: '';
-			display: block;
-			width: 120px;
-			height: 65px;
-			transform: skew(-24deg) translateX(15px);
-			background-color: $gray;
-		}
-	}
+  .menu {
+    cursor: pointer;
+    display: block;
+    width: 120px;
+    height: 65px;
+    background-color: $gray;
+    z-index: 2;
+    .menu-logo {
+      visibility: visible;
+      z-index: 2;
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      display: inline-block;
+      .bar {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: $red;
+        margin-bottom: 3px;
+      }
+    }
+    .menu-logo-close {
+      visibility: hidden;
+      z-index: 2;
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      display: inline-block;
+      .bar-left {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: $red;
+        transform: rotate(45deg);
+        margin-left: 8px;
+        margin-top: 5px;
+      }
+      .bar-right {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: $red;
+        transform: rotate(-45deg);
+        margin-left: 8px;
+        margin-top: -2.5px;
+      }
+    }
+    span {
+      z-index: 2;
+      position: absolute;
+      left: 70px;
+      top: 24px;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: $red;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 65px;
+      transform: skew(-24deg) translateX(15px);
+      background-color: $gray;
+    }
+  }
 }
